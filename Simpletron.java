@@ -53,14 +53,9 @@ class Simpletron {
         Simpletron.apagar();
     }
 
-    private void dictar() {
-        procesador.dictar();
+    private void dictar() { procesador.dictar(); }
 
-    }
-
-    static int getEntrada() {
-        return scanner.nextInt();
-    }
+    static int getEntrada() { return scanner.nextInt(); }
 
     static int getInstruccion() {
         int instruc = getEntrada();
@@ -85,13 +80,9 @@ class Simpletron {
         prendida = false;
     }
 
-    static boolean isPrendida() { // MUy mal, porque simpletron debería ser un objeto independiente
-        return prendida;
-    }
+    static boolean isPrendida() { return prendida;}
 
-    private static void usarModoInteractivo() {
-        modoInteractivo = true;
-    }
+    private static void usarModoInteractivo() { modoInteractivo = true; }
 
     private static void setModoDeUso() {
         System.out.print("Modo de uso: ");
